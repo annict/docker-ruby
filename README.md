@@ -1,6 +1,5 @@
 # shimbaco/ruby
 
-
 ## Development
 
 ```
