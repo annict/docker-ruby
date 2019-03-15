@@ -1,5 +1,5 @@
 FROM jwilder/dockerize as dockerize
-FROM node:10.15.1-alpine as node
+FROM node:10.15.3-alpine as node
 FROM ruby:2.6.2-alpine
 
 COPY --from=dockerize /usr/local/bin/dockerize /usr/local/bin/
