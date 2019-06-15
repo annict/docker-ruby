@@ -15,6 +15,8 @@ RUN apk update && \
       curl \
       git \
       imagemagick \
+      # For `psql` command
+      postgresql-client \
       postgresql-dev \
       yarn
 
