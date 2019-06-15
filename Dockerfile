@@ -20,4 +20,6 @@ RUN apk update && \
       postgresql-dev \
       yarn
 
+RUN gem install bundler -v 2.0.2
+
 CMD ["/bin/sh"]
