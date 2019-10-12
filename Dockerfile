@@ -18,7 +18,9 @@ RUN apk update && \
       # For `psql` command
       postgresql-client \
       postgresql-dev \
-      yarn
+      yarn \
+      chromium \
+      chromium-chromedriver
 
 RUN gem install bundler -v 2.0.2
 
