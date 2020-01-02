@@ -1,6 +1,6 @@
 FROM jwilder/dockerize as dockerize
-FROM node:10.16.3-alpine as node
-FROM ruby:2.6.5-alpine
+FROM node:12.14.0-alpine as node
+FROM ruby:2.7.0-alpine
 
 COPY --from=dockerize /usr/local/bin/dockerize /usr/local/bin/
 COPY --from=node /usr/local/lib/node_modules /usr/local/lib/node_modules
@@ -22,6 +22,6 @@ RUN apk update && \
       chromium \
       chromium-chromedriver
 
-RUN gem install bundler -v 2.0.2
+RUN gem install bundler -v 2.1.3
 
 CMD ["/bin/sh"]
