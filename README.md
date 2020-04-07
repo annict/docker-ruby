@@ -11,6 +11,6 @@ $ docker container run -i -t <Image ID> /bin/ash
 
 ```
 $ docker build -t annict/ruby .
-$ docker tag annict/ruby annict/ruby:2.7.0-node_12.14.0
-$ docker push annict/ruby:2.7.0-node_12.14.0
+$ docker tag annict/ruby annict/ruby:2.7.1-node_12.16.1
+$ docker push annict/ruby:2.7.1-node_12.16.1
 ```
